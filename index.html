@@ -84,7 +84,7 @@
           </li> -->
 
           <li>
-            <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+            <a href="#footer-container" class="navbar-link hover-1" data-nav-toggler>Contact</a>
           </li>
 
         </ul>
@@ -134,12 +134,12 @@
         </div>
 
         <p class="copyright-text">
-          Copyright 2024 © Developed By Pooj chugh
+          Copyright 2024 © Developed By Pooja chugh
         </p>
 
       </nav>
 
-      <a href="#" class="btn btn-primary">Subscribe</a>
+      <a href="#footer-container" class="btn btn-primary">Subscribe</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -175,16 +175,13 @@
             </p>
 
             <div class="input-wrapper">
-
-              <input type="email" name="email_address" placeholder="Type your email address" required
-                class="input-field" autocomplete="off">
-
-              <button class="btn btn-primary">
-                <span class="span">Subscribe</span>
-
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-              </button>
-
+              <form id="subscription-form" action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">
+                  <span class="span">Subscribe</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
             </div>
 
           </div>
@@ -393,378 +390,57 @@
     
                     </div>
                 </li>
-    
-                <!-- <li>
-                    <div class="card feature-card">
-    
-                        <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                            <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
-                                alt="Self-observation is the first step of inner unfolding" class="img-cover">
-                        </figure>
-    
-                        <div class="card-content">
-    
-                            <div class="card-wrapper">
-                                <div class="card-tag">
-                                    <a href="#" class="span hover-2">#Topic</a>
-    
-                                    <a href="#" class="span hover-2">#Topic</a>
-                                </div>
-    
-                                <div class="wrapper">
-                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-    
-                                    <span class="span">6 mins read</span>
-                                </div>
-                            </div>
-    
-                            <h3 class="headline headline-3">
-                              <a href="lgbtqrights.html" class="card-title hover-2">
-                                TRANSGENDER RIGHTS
+                <li>
+                  <div class="card feature-card">
+  
+                      <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                          <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
+                              alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                      </figure>
+  
+                      <div class="card-content">
+  
+                          <div class="card-wrapper">
+                              <div class="card-tag">
+                                  <a href="#" class="span hover-2">#Optics</a>
+  
+                                  <a href="#" class="span hover-2">#Laser</a>
+                              </div>
+  
+                              <div class="wrapper">
+                                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+  
+                                  <span class="span">5 mins read</span>
+                              </div>
+                          </div>
+  
+                          <h3 class="headline headline-3">
+                              <a href="laser.html" class="card-title hover-2">
+                                 Laser Communications
                               </a>
                           </h3>
-    
-                            <div class="card-wrapper">
-    
-                                <div class="profile-card">
-                                    <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
-                                        class="profile-banner">
-    
-                                    <div>
-                                        <p class="card-title">Joseph</p>
-    
-                                        <p class="card-subtitle">25 Nov 2022</p>
-                                    </div>
-                                </div>
-    
-                                <a href="#" class="card-btn">Read more</a>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
-                </li>
-    
-                <li>
-                    <div class="card feature-card">
-    
-                        <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                            <img src="./assets/images/featured-3.png" width="1602" height="903" loading="lazy"
-                                alt="Self-observation is the first step of inner unfolding" class="img-cover">
-                        </figure>
-    
-                        <div class="card-content">
-    
-                            <div class="card-wrapper">
-                                <div class="card-tag">
-                                    <a href="#" class="span hover-2">#Topic</a>
-    
-                                    <a href="#" class="span hover-2">#Topic</a>
-                                </div>
-    
-                                <div class="wrapper">
-                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-    
-                                    <span class="span">6 mins read</span>
-                                </div>
-                            </div>
-    
-                            <h3 class="headline headline-3">
-                                <a href="#" class="card-title hover-2">
-                                    Post 3
-                                </a>
-                            </h3>
-    
-                            <div class="card-wrapper">
-    
-                                <div class="profile-card">
-                                    <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
-                                        class="profile-banner">
-    
-                                    <div>
-                                        <p class="card-title">Joseph</p>
-    
-                                        <p class="card-subtitle">25 Nov 2022</p>
-                                    </div>
-                                </div>
-    
-                                <a href="#" class="card-btn">Read more</a>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
-                </li>
-    
-                <li>
-                    <div class="card feature-card">
-    
-                        <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                            <img src="./assets/images/featured-4.png" width="1602" height="903" loading="lazy"
-                                alt="Self-observation is the first step of inner unfolding" class="img-cover">
-                        </figure>
-    
-                        <div class="card-content">
-    
-                            <div class="card-wrapper">
-                                <div class="card-tag">
-                                    <a href="#" class="span hover-2">#Topic</a>
-    
-                                    <a href="#" class="span hover-2">#Topic</a>
-                                </div>
-    
-                                <div class="wrapper">
-                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-    
-                                    <span class="span">6 mins read</span>
-                                </div>
-                            </div>
-    
-                            <h3 class="headline headline-3">
-                                <a href="#" class="card-title hover-2">
-                                    Post 4
-                                </a>
-                            </h3>
-    
-                            <div class="card-wrapper">
-    
-                                <div class="profile-card">
-                                    <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
-                                        class="profile-banner">
-    
-                                    <div>
-                                        <p class="card-title">Joseph</p>
-    
-                                        <p class="card-subtitle">25 Nov 2022</p>
-                                    </div>
-                                </div>
-    
-                                <a href="#" class="card-btn">Read more</a>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
-                </li>
-    
-                <li>
-                    <div class="card feature-card">
-    
-                        <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                            <img src="./assets/images/featured-5.png" width="1602" height="903" loading="lazy"
-                                alt="Self-observation is the first step of inner unfolding" class="img-cover">
-                        </figure>
-    
-                        <div class="card-content">
-    
-                            <div class="card-wrapper">
-                                <div class="card-tag">
-                                    <a href="#" class="span hover-2">#Design</a>
-    
-                                    <a href="#" class="span hover-2">#Movie</a>
-                                </div>
-    
-                                <div class="wrapper">
-                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-    
-                                    <span class="span">6 mins read</span>
-                                </div>
-                            </div>
-    
-                            <h3 class="headline headline-3">
-                                <a href="#" class="card-title hover-2">
-                                    Post 5
-                                </a>
-                            </h3>
-    
-                            <div class="card-wrapper">
-    
-                                <div class="profile-card">
-                                    <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
-                                        class="profile-banner">
-    
-                                    <div>
-                                        <p class="card-title">Joseph</p>
-    
-                                        <p class="card-subtitle">25 Nov 2022</p>
-                                    </div>
-                                </div>
-    
-                                <a href="#" class="card-btn">Read more</a>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
-                </li>
-    
-            </ul>
-    
-            <a href="#" class="btn btn-secondary">
-                <span class="span">Show More Posts</span>
-    
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-    
-        </div>
-    
-        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
-     -->
-    </section>
-    
-
-
   
+                      </div>
+  
+                  </div>
+              </li>
+                <a href="#" class="btn btn-secondary">
+                  <span class="span">Show More Posts</span>
+      
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+            </ul>
+           
+        </div>
+
+      </section>
+    
+
+
+      <div id="footer-container"></div>
       
   
-<!-- footer -->
-  <footer>
-    <div class="container">
-
-      <div class="card footer">
-
-        <div class="section footer-top">
-
-          <div class="footer-brand">
-
-            <a href="#" class="logo">
-              <img src="./assets/images/logo.jpg" width="119" height="37" loading="lazy" alt="Pooja logo">
-            </a>
-
-            <p class="footer-text">
-             "  Beauty lies in the eyes of the beholder"  ~Plato
-            </p>
-
-            <p class="footer-list-title">Address</p>
-
-            <address class="footer-text address">
-              IISER Mohali <br>
-              Punjab, India
-            </address>
-
-          </div>
-
-          <div class="footer-list">
-
-            <p class="footer-list-title">Categories</p>
-
-            <ul>
-
-              <li>
-                <a href="#" class="footer-link hover-2">Research Interest</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover-2">Puiblications</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover-2">Seminars Given</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover-2">Foreign Visits</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover-2">Educational Qualifications</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover-2">Awards and Achievements</a>
-              </li>
-
-             
-            </ul>
-
-          </div>
-
-          <div class="footer-list">
-
-            <p class="footer-list-title">Newsletter</p>
-
-            <p class="footer-text">
-              Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
-            </p>
-
-            <div class="input-wrapper">
-              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
-
-              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-            </div>
-
-            <div class="input-wrapper">
-              <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
-                autocomplete="off">
-
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-            </div>
-
-            <a href="#" class="btn btn-primary">
-              <span class="span">Subscribe</span>
-
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-          <p class="copyright">
-            &copy; Developed by <a href="#" class="copyright-link">Pooja chugh</a>
-          </p>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="https://x.com/PoojaChugh24" class="social-link" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-twitter"></ion-icon>
-                <span class="span">Twitter</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/in/pooja-chugh-youtuber/" class="social-link" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-linkedin"></ion-icon>
-
-                <span class="span">LinkedIn</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/poojachugh24/" class="social-link" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-instagram"></ion-icon>
-
-                <span class="span">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/c/Poojachugh" class="social-link" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="logo-youtube"></ion-icon>
-
-                <span class="span">youtube</span>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-  </footer>
-
-
-
-
-
   <!-- 
     - #BACK TO TOP
   -->

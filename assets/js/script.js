@@ -25,7 +25,34 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+/* subscription button */
 
+document.getElementById('subscription-form').addEventListener('submit', async function (event) {
+  event.preventDefault();
+  const form = event.target;
+  const formData = new FormData(form);
+  const email = formData.get('email');
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    if (response.ok) {
+      alert('Subscription successful!');
+    } else {
+      const errorText = await response.text();
+      alert('Subscription failed: ' + errorText);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred. Please try again later.');
+  }
+});
 
 /**
  * MOBILE NAVBAR TOGGLER
@@ -124,3 +151,6 @@ window.addEventListener("resize", function () {
 
   moveSliderItem();
 });
+fetch('footer.html')
+.then(response => response.text())
+.then(data => document.getElementById('footer-container').innerHTML = data);

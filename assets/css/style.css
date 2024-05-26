@@ -278,7 +278,14 @@ body.nav-active { overflow: hidden; }
   padding: 18px 30px;
   border-radius: var(--radius-pill);
 }
-
+.feature .btn {
+  margin-inline: auto;
+  margin-block-start: 30px;
+}
+.btn-secondary {
+  padding: 18px 30px;
+  border-radius: var(--radius-pill);
+}
 .w-100 { width: 100%; }
 
 .card {

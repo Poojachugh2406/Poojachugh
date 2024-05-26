@@ -1,0 +1,91 @@
+/*-----------------------------------*\
+  #post style
+\*-----------------------------------*/
+
+:root {
+    /* Colors */
+    --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+    --bg-carolina-blue: hsla(199, 89%, 49%, 1);
+    --bg-prussian-blue: hsla(216, 33%, 20%, 1);
+    --bg-oxford-blue: hsla(222, 44%, 13%, 1);
+    --bg-oxford-blue-2: hsla(222, 47%, 11%, 1);
+    /* Text colors */
+    --text-white: hsla(0, 0%, 100%, 1);
+    --text-alice-blue: hsla(216, 100%, 95%, 1);
+    --text-columbia-blue: hsla(199, 69%, 84%, 1);
+    --text-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+    --text-carolina-blue: hsla(199, 89%, 49%, 1);
+    --text-shadow-blue: hsla(217, 24%, 59%, 1);
+    --text-slate-gray: hsla(217, 17%, 48%, 1);
+    /* Font family */
+    --fontFamily-noto_sans: 'Noto Sans', sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-oxford-blue-2);
+    color: var(--text-shadow-blue);
+    font-family: var(--fontFamily-noto_sans);
+    font-size: 1.6rem;
+  }
+  
+  .container {
+    padding-inline: 16px;
+  }
+  
+  .btn {
+    background-image: var(--gradient-2);
+    background-size: 200%;
+    background-position: left;
+    color: var(--white);
+    font-size: var(--fontSize-6);
+    font-weight: var(--weight-bold);
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: var(--transition-1);
+  }
+  
+  .btn:is(:hover, :focus-visible) { background-position: right; }
+  
+  .btn-primary {
+    padding: 8px 16px;
+    border-radius: var(--radius-6);
+  }
+  
+  .btn-secondary {
+    padding: 18px 30px;
+    border-radius: var(--radius-pill);
+  }
+  
+  .section {
+    padding-block: var(--section-padding);
+  }
+  
+  .section-text {
+    font-size: var(--fontSize-3);
+    margin-block-end: 70px;
+  }
+  
+  .card {
+    background-color: var(--bg-oxford-blue);
+    border: 1px solid var(--border-prussian-blue);
+  }
+  
+  .img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--bg-prussian-blue);
+    overflow: hidden;
+  }
+  
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .grid-list {
+    display: grid;
+    gap: 30px;
+  }
+  

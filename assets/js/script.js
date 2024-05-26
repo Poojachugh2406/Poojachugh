@@ -14,6 +14,19 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navigationBar = document.querySelector('.navigation'); // Replace '.navigation' with your actual navigation bar selector
+  const lastMinuteStudiesLink = document.querySelector('.headline-3 a');
+
+  if (lastMinuteStudiesLink && navigationBar) {
+      lastMinuteStudiesLink.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default behavior of the link
+          navigationBar.classList.add('fixed-navigation'); // Add the 'fixed-navigation' class to the navigation bar
+      });
+  }
+});
+
+
 /**
  * MOBILE NAVBAR TOGGLER
  */

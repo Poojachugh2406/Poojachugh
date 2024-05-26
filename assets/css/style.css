@@ -231,6 +231,14 @@ body.nav-active { overflow: hidden; }
 
 .headline-2 { font-size: var(--fontSize-2); }
 
+/* Your existing CSS styles */
+.fixed-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Add any other styles for the fixed navigation bar */
+}
+
 .headline-3 {
   font-size: var(--fontSize-2);
   line-height: var(--lineHeight-2);
